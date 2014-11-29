@@ -28,4 +28,8 @@ Pinteresting::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #imagemagick added code
+  Paperclip.options[:command_path] = "C:/Program Files/ImageMagick-6.9.0-Q16"
+
 end
